@@ -21,7 +21,7 @@ class Test_Plugin extends \WP_UnitTestCase {
 	 */
 	public function test_construct() {
 		$plugin = new Plugin();
-		$this->assertEquals( 9, has_action( 'after_setup_theme', array( $plugin, 'init' ) ) );
+		$this->assertEquals( 10, has_action( 'after_setup_theme', array( $plugin, 'init' ) ) );
 		$this->assertEquals( 11, has_action( 'wp_default_scripts', array( $plugin, 'register_scripts' ) ) );
 		$this->assertEquals( 11, has_action( 'wp_default_styles', array( $plugin, 'register_styles' ) ) );
 	}
