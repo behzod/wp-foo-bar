@@ -21,7 +21,8 @@ class Plugin extends Plugin_Base {
 	 *
 	 * @action after_setup_theme, 9
 	 */
-	public function init() {
+	public function init()
+	{
 		$this->config = apply_filters( 'foo_bar_plugin_config', $this->config, $this );
 	}
 
